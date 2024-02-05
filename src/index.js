@@ -12,6 +12,9 @@ function calculateRating (winnerRating, loserRating) {
     if (typeof winnerRating !== 'number' || typeof loserRating !== 'number') {
         return 'Unknown information.'
     };
+    if (isNaN(winnerRating) || isNaN(loserRating)) {
+    return 'Invalid information. Ratings must be numbers.';
+    };
     if (winnerRating < 0 || loserRating < 0){
         return 'Rating can not be less than 0';
     };
