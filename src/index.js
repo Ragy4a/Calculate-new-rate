@@ -5,7 +5,7 @@
  * 
  * @param {number} winnerRating - Рейтинг Победившего
  * @param {number} loserRating - Рейтинг проигравшего
- * @returns - возвращает ответы при неправильном вводе и также возвращает информцаию которую выдала функция.
+ * @returns {string} - возвращает ответы при неправильном вводе и также возвращает информцаию которую выдала функция.
  */
 function calculateRating (winnerRating, loserRating) {
     let rateDifference = winnerRating - loserRating;
